@@ -44,7 +44,7 @@
 #require_recipe "mongodb"
 
 #uncomment to run the resque recipe
-# require_recipe "resque"
+require_recipe "resque"
 
 #uncomment to run redis.yml recipe
 require_recipe "redis-yml"
