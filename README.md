@@ -19,3 +19,14 @@ Continuous Integration
 ======================
 
 [![Build Status](https://secure.travis-ci.org/engineyard/ey-cloud-recipes.png?branch=master)](http://travis-ci.org/engineyard/ey-cloud-recipes)
+
+Spacecast Server
+================
+
+Certain environment variables need to live inside of `cookbooks/environment/templates/default/env.custom.erb`.
+
+The format of these environment variables is, for example:
+
+```bash
+export AWS_STUFF=xxxxxx
+```
