@@ -55,6 +55,9 @@ require_recipe "redis-yml"
 #uncomment to run the redis recipe
 require_recipe "redis"
 
+# run the environment recipe
+require_recipe "environment"
+
 #uncomment to run the api-keys-yml recipe
 # require_recipe "api-keys-yml"
 
