@@ -23,10 +23,6 @@ Continuous Integration
 Spacecast Server
 ================
 
-Certain environment variables need to live inside of `cookbooks/environment/templates/default/env.custom.erb`.
+Certain environment variables need to live inside of `cookbooks/figaro/files/default/application.yml`.  This is ignored by git, because it contains sensitive environment variable data.
 
-The format of these environment variables is, for example:
-
-```bash
-export AWS_STUFF=xxxxxx
-```
+This is identical to spacecast_server's `config/application.yml` file.  Make sure it is up to date before uploading recipes.
