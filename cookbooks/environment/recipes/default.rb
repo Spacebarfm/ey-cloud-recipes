@@ -1,4 +1,4 @@
-if ['app_master', 'app', 'solo'].include?(node[:instance_role])
+if ['app_master', 'app', 'util', 'solo'].include?(node[:instance_role])
   node[:applications].each do |app_name, data|
     template "/data/#{app_name}/shared/config/env.custom" do
       source "env.custom.erb"
@@ -6,7 +6,6 @@ if ['app_master', 'app', 'solo'].include?(node[:instance_role])
       group node[:owner_name]
       mode 0755
       backup 0
-      notifies :restart, resources(:service => "nginx"), :delayed
     end
   end
 end
