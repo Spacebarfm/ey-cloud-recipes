@@ -97,6 +97,10 @@ require_recipe "figaro"
 # uncomment to include the PHP recipe
 # require_recipe "php"
 
+# include the ffmpeg recipe
+
+require_recipe "ffmpeg"
+
 #enable Extension modules for a given Postgresql database
 # if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
   # Extensions that support both Postgres 9.0, 9.1 and 9.2
