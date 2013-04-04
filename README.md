@@ -23,6 +23,12 @@ Continuous Integration
 Spacecast Server
 ================
 
-Certain environment variables need to live inside of `cookbooks/figaro/files/default/application.yml`.  This is ignored by git, because it contains sensitive environment variable data.
+Certain environment variables need to live inside of `cookbooks/figaro/files/default/application.yml.erb`.  This is ignored by git, because it contains sensitive environment variable data.
 
 This is identical to spacecast_server's `config/application.yml` file.  Make sure it is up to date before uploading recipes.
+
+If `ey-cloud-recipes` and `spacecast_server` are in the same directory, you could run:
+
+```bash
+$ cp ../spacecast_server/config/application.yml cookbooks/figaro/files/default/application.yml.erb
+```
