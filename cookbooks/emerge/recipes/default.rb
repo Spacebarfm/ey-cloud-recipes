@@ -23,3 +23,12 @@
 #   version "2.7.6"
 #   action :install
 # end
+
+enable_package "media-video/ffmpeg" do
+  version "0.10.6"
+end
+
+package "media-video/ffmpeg" do
+  version "0.10.6"
+  action :install
+end
