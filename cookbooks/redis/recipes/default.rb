@@ -68,7 +68,7 @@ if ['util'].include?(node[:instance_role])
 end
 
 if ['solo', 'app', 'app_master', 'util'].include?(node[:instance_role])
-  redis_instance = node.engineyard.environment.instances.find{ |n| n[:instance_role] == "util" && x.name == "redis"}
+  redis_instance = node['utility_instances'].find { |instance| instance['name'] == 'redis' }
   redis_instance ||= node.engineyard.environment.instances.first
 
   if redis_instance
