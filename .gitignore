@@ -1,5 +1,3 @@
 .DS_Store
 *.swp
 /cookbooks/figaro/templates/default/
-/cookbooks/figaro/files/default/application.yml.erb
-/cookbooks/figaro/files/
